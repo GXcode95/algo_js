@@ -1,6 +1,8 @@
 //?----------------
 //$ ---- MERGE ----
 //?----------------
+
+
 function merge(start, end) {
   let sortedArr = []
 
@@ -26,9 +28,13 @@ function mergeSort(array) {
   
   return merge(mergeSort(start), mergeSort(array));
 }
+
+
 //?----------------
 //$ ---- EXO 1 ---- 
 //?----------------
+
+
 function sumOfTwo(array, k) {
   
   for(let i = 0; i < array.length; i++ ){
@@ -40,9 +46,13 @@ function sumOfTwo(array, k) {
   
   return false
 }
+
+
 //?----------------
 //$ ---- EXO 2 et 4 et 6 ----
 //?----------------
+
+
 function realEstate(array) {
   let nbBuilding = 1;
   let temp = array[array.length - 1]
@@ -56,9 +66,12 @@ function realEstate(array) {
   return nbBuilding
 }
 
+
 //?----------------
 //$ ---- EXO 3 ----
 //?----------------
+
+
 function sumOfTwoV2(array, k) {
   const set = new Set(array)
   for (let i of set) {
@@ -67,9 +80,13 @@ function sumOfTwoV2(array, k) {
   }
   return false
 }
+
+
 //?----------------
 //$ ---- EXO 5 ----
 //?----------------
+
+
 function google(array, k) {
   let set = new Set() 
   for (let i = 0; i < array.length;i++) {
@@ -124,7 +141,7 @@ try {
     "google" : exo05,
     "maiLChimp" : exo02
   }
-  
+
   console.table(perf)
 
 
