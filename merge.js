@@ -1,8 +1,7 @@
 function merge(start, end) {
   let sortedArr = []
-  while (start.length && end.length) {
+  while (start.length && end.length)
     start[0] > end[0]  ? sortedArr.push(end.shift()) : sortedArr.push(start.shift())
-  }
   return [...sortedArr, ...start, ...end]
 }
 function mergeSort(array) {
